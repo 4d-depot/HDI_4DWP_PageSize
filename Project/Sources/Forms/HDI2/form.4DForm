@@ -1,8 +1,8 @@
 {
 	"destination": "detailScreen",
-	"windowMinWidth": 800,
+	"windowMinWidth": 1000,
 	"windowMaxWidth": 32000,
-	"windowMinHeight": 540,
+	"windowMinHeight": 720,
 	"windowMaxHeight": 32000,
 	"width": 1000,
 	"height": 720,
@@ -94,10 +94,10 @@
 			"objects": {
 				"WParea": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 40,
 					"width": 920,
-					"height": 560,
+					"height": 590,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "wpInfo",
@@ -117,7 +117,9 @@
 					"showHeaders": false,
 					"showFooters": false,
 					"showHorizontalRuler": false,
-					"showVerticalRuler": false
+					"showVerticalRuler": false,
+					"enterable": false,
+					"focusable": false
 				}
 			}
 		},
@@ -125,10 +127,10 @@
 			"objects": {
 				"WParea1": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 520,
 					"width": 440,
-					"height": 520,
+					"height": 570,
 					"sizingX": "move",
 					"sizingY": "grow",
 					"dataSource": "wpInfo",
@@ -155,10 +157,10 @@
 				},
 				"WParea4": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 40,
 					"width": 440,
-					"height": 520,
+					"height": 530,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "wpSample",
@@ -179,11 +181,14 @@
 					"showFooters": false,
 					"showHorizontalRuler": true,
 					"showVerticalRuler": true,
-					"zoom": 50
+					"zoom": 50,
+					"enterable": true,
+					"focusable": true,
+					"contextMenu": "none"
 				},
 				"Popup Dropdown List": {
 					"type": "dropdown",
-					"left": 240,
+					"left": 260,
 					"top": 620,
 					"width": 220,
 					"height": 20,
@@ -192,17 +197,29 @@
 					],
 					"action": "pageSize",
 					"focusable": false,
-					"sizingX": "move"
+					"sizingX": "move",
+					"sizingY": "move"
 				},
 				"Text": {
 					"type": "text",
 					"text": "\"pageSize\" standard action:",
 					"top": 623,
 					"left": 40,
-					"width": 195,
+					"width": 210,
 					"height": 16,
 					"textAlign": "right",
-					"sizingX": "move"
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 588,
+					"left": 500,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowLeftBottom.png",
+					"sizingX": "move",
+					"sizingY": "move"
 				}
 			}
 		},
@@ -210,10 +227,10 @@
 			"objects": {
 				"WParea2": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 520,
 					"width": 440,
-					"height": 520,
+					"height": 570,
 					"sizingX": "move",
 					"sizingY": "grow",
 					"dataSource": "wpInfo",
@@ -233,14 +250,16 @@
 					"showHeaders": false,
 					"showFooters": false,
 					"showHorizontalRuler": false,
-					"showVerticalRuler": false
+					"showVerticalRuler": false,
+					"enterable": false,
+					"focusable": false
 				},
 				"WParea5": {
 					"type": "write",
-					"top": 80,
+					"top": 70,
 					"left": 40,
 					"width": 440,
-					"height": 520,
+					"height": 530,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "wpSample",
@@ -261,13 +280,16 @@
 					"showFooters": false,
 					"showHorizontalRuler": true,
 					"showVerticalRuler": true,
-					"zoom": 50
+					"zoom": 50,
+					"enterable": true,
+					"focusable": true,
+					"contextMenu": "none"
 				},
 				"Button2": {
 					"type": "button",
 					"text": "A4",
 					"top": 620,
-					"left": 160,
+					"left": 130,
 					"width": 80,
 					"height": 20,
 					"events": [
@@ -309,7 +331,7 @@
 					"type": "button",
 					"text": "LegalUS",
 					"top": 620,
-					"left": 280,
+					"left": 310,
 					"width": 80,
 					"height": 20,
 					"events": [
@@ -329,7 +351,34 @@
 					"events": [
 						"onClick"
 					],
-					"dataSource": "Form:C1466.traceCode"
+					"dataSource": "Form:C1466.traceCode",
+					"sizingY": "move",
+					"enterable": false,
+					"focusable": false
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 588,
+					"left": 500,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Images/Arrows/ArrowLeftBottom.png",
+					"sizingX": "move",
+					"sizingY": "move"
+				},
+				"Button6": {
+					"type": "button",
+					"text": "A3",
+					"top": 620,
+					"left": 220,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"focusable": false,
+					"sizingY": "move"
 				}
 			}
 		}
@@ -345,5 +394,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 425
+	"geometryStamp": 620
 }
