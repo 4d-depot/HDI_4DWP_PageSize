@@ -1,4 +1,4 @@
-# HDI_4DWP_ManageAnchoredPictures
+# HDI_4DWP_PageSize
 
 Uses "wk page size" new attribute in [4D Write Pro](https://us.4d.com/4D-write-pro) documents (4D 20 R5)
 
